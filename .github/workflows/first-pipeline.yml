@@ -23,7 +23,7 @@ jobs: #req actions
           cache: maven
       - name: Build with Maven
         #this runs a command
-        run: mvn -B package --files pom.xml
+        run: mvn -B package --file pom.xml
       - name:  Upload artifacts
         uses: actions/upload-artifact@v4
         with:
